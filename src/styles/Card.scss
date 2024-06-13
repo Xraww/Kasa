@@ -4,6 +4,8 @@
     border-radius: 10px;
     position: relative;
 
+    flex: 1 1 calc(33.333% - 30px);
+
     img {
         width: 100%;
         height: 100%;
@@ -13,9 +15,8 @@
 
     p {
         position: absolute;
-        bottom: 0;
-        left: 0;
-        margin: 0;
+        bottom: 5%;
+        left: 5%;
         color: #FFFFFF;
         font-size: 18px;
         font-weight: 700;

@@ -1,12 +1,16 @@
+import { Link } from "react-router-dom"
 import "../styles/Card.scss";
-// voir pour les routes: /logements/** : https://openclassrooms.com/fr/courses/7150606-creez-une-application-react-complete/7254735-transformez-votre-application-en-single-page-application-avec-react-router
 
 export default function Card(props) {
-    console.log("card called");
+    const logement = props.data;
+
     return (
-        <div className="card">
-            <img src={props.img} alt={props.title}/>
-            <p>{props.title}</p>
-        </div>
+        <Link to={`/home/logements/${logement.id}`} state={logement}>
+            <div className="card">
+                <img src={logement.pictures[0]} alt={logement.title}/>
+                <p>{logement.title}</p>
+            </div>
+        </Link>
+
     )
 }

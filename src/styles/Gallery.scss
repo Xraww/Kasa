@@ -1,18 +1,21 @@
 .gallery {
-    width: 80%;
+    width: 1240px;
     height: 770px;
     margin: 40px auto;
-    background-color: #F6F6F6;
-    border-radius: 25px;
-
     padding: 35px;
     box-sizing: border-box;
+    background-color: #F6F6F6;
 
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 30px;
 
     position: relative;
     overflow-y: scroll;
     overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
