@@ -11,6 +11,5 @@ export default function Card(props) {
                 <p>{logement.title}</p>
             </div>
         </Link>
-
     )
 }

@@ -1,17 +1,10 @@
-.details-container {
+.container {
     width: 1240px;
     margin: 0 auto 50px auto;
     display: flex;
     flex-direction: column;
 
-    #logementPicture {
-        width: 1240px;
-        height: 415px;
-        object-fit: cover;
-        border-radius: 25px;
-    }
-
-    .details {
+    .details-container {
         .text {
             display: flex;
             justify-content: space-between;
@@ -45,7 +38,7 @@
                     .tag {
                         color: #FFFFFF;
                         background-color: #FF6060;
-                        padding: 5px;
+                        padding: 10px;
                         border-radius: 10px;
                     }
                 }

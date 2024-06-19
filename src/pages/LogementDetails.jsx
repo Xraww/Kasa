@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLocation, useParams, useNavigate } from "react-router-dom"
 import Header from "../components/Header";
+import Slideshow from "../components/Slideshow";
 import Footer from "../components/Footer";
 import "../styles/LogementDetails.scss";
 
@@ -25,10 +26,10 @@ export default function LogementDetails() {
     return (
         <div className="LogementDetails">
             <Header/>
-            <div className="details-container">
-                <img src={logement.pictures[0]} alt={logement.title} id="logementPicture"/>
+            <div className="container">
+                <Slideshow images={logement.pictures}/>
     
-                <div className="details">
+                <div className="details-container">
                     <div className="text">
                         <div className="details-logement">
                             <div className="title-location">

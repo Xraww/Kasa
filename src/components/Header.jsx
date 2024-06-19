@@ -19,17 +19,17 @@ export default function Header() {
         localStorage.setItem("activeSection", section);
     };
 
-  return (
-    <header>
-        <div className="navbar">
-            <img src={logo} alt="Logo du site"/>
-            
-            <div className="navbar-links">
-                <Link to="/home" className={`links ${activeSection === "home" ? "active" : ""}`} onClick={() => handleSetActive("home")}>Accueil</Link>
-                <Link to="/about" className={`links ${activeSection === "about" ? "active" : ""}`} onClick={() => handleSetActive("about")}>A Propos</Link>
+    return (
+        <header>
+            <div className="navbar">
+                <img src={logo} alt="Logo du site"/>
+                
+                <div className="navbar-links">
+                    <Link to="/home" className={`links ${activeSection === "home" ? "active" : ""}`} onClick={() => handleSetActive("home")}>Accueil</Link>
+                    <Link to="/about" className={`links ${activeSection === "about" ? "active" : ""}`} onClick={() => handleSetActive("about")}>A Propos</Link>
+                </div>
             </div>
-        </div>
-    </header>
-  );
+        </header>
+    );
 }
 

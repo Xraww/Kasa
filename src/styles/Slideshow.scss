@@ -1,0 +1,43 @@
+.Slideshow {
+    position: relative;
+
+    #logementPicture {
+        width: 1240px;
+        height: 415px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+
+    .numbering {
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(50%);
+
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    @mixin center-vertical {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .switch {
+        font-size: 47px;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+    .fa-chevron-left {
+        @include center-vertical;
+        left: 1%;
+    }
+
+    .fa-chevron-right {
+        @include center-vertical;
+        right: 1%;
+    }
+}

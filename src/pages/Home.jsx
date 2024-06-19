@@ -4,12 +4,12 @@ import Gallery from "../components/Gallery";
 import Footer from "../components/Footer";
 
 export default function Home() {
-  return (
-    <div className="Home">
-        <Header/>
-        <ImageSection/>
-        <Gallery/>
-        <Footer/>
-    </div>
-  );
+    return (
+        <div className="Home">
+            <Header/>
+            <ImageSection/>
+            <Gallery/>
+            <Footer/>
+        </div>
+    );
 }
