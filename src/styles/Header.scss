@@ -21,7 +21,7 @@ header {
                 list-style: none;
                 cursor: pointer;
 
-                &:first-child {
+                &.active {
                     text-decoration: underline;
                 }
             }
