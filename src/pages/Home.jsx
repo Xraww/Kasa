@@ -1,13 +1,15 @@
 import Header from "../components/Header";
-import ImageSection from "../components/ImageSection";
+import Banner from "../components/Banner";
 import Gallery from "../components/Gallery";
 import Footer from "../components/Footer";
+
+import img from "../assets/paysage.jpg";
 
 export default function Home() {
     return (
         <div className="Home">
             <Header/>
-            <ImageSection/>
+            <Banner title="Chez vous, partout et ailleurs" img={img} />
             <Gallery/>
             <Footer/>
         </div>

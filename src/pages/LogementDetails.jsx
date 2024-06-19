@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useLocation, useParams, useNavigate } from "react-router-dom"
 import Header from "../components/Header";
 import Slideshow from "../components/Slideshow";
+import Collapse from "../components/Collapse";
 import Footer from "../components/Footer";
 import "../styles/LogementDetails.scss";
 
@@ -55,18 +56,18 @@ export default function LogementDetails() {
                             </div>
     
                             <div className="rate-details">
-                                <i className="fa-solid fa-star"></i>
-                                <i className="fa-solid fa-star"></i>
-                                <i className="fa-solid fa-star"></i>
-                                <i className="fa-solid fa-star"></i>
-                                <i className="fa-solid fa-star"></i>
+                                <i className={`fa-solid fa-star ${logement.rating >= 1 ? "active-star" : ""}`}></i>
+                                <i className={`fa-solid fa-star ${logement.rating >= 2 ? "active-star" : ""}`}></i>
+                                <i className={`fa-solid fa-star ${logement.rating >= 3 ? "active-star" : ""}`}></i>
+                                <i className={`fa-solid fa-star ${logement.rating >= 4 ? "active-star" : ""}`}></i>
+                                <i className={`fa-solid fa-star ${logement.rating >= 5 ? "active-star" : ""}`}></i>
                             </div>
                         </div>
                     </div>
-    
+
                     <div className="buttons">
-                        <button>Description<span><i className="fa-solid fa-chevron-up"></i></span></button>
-                        <button>Équipements<span><i className="fa-solid fa-chevron-up"></i></span></button>
+                        <Collapse title="Description" content={logement.description}/>
+                        <Collapse title="Équipements" content={logement.equipments}/>
                     </div>
                 </div>
             </div>

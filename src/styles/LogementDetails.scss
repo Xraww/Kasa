@@ -78,8 +78,12 @@
                     gap: 5px;
             
                     .fa-star {
-                        color: #FF6060;
+                        color: #E3E3E3;
                         font-size: 24px;
+                    }
+
+                    .active-star {
+                        color: #FF6060;
                     }
                 }
             }
@@ -88,22 +92,10 @@
         .buttons {
             display: flex;
             justify-content: space-between;
-            margin-top: 40px;
+            margin-top: 20px;
 
-            button {
-                background-color: #FF6060;
-                color: #FFFFFF;
-                padding: 10px 20px 10px 10px;
+            .Collapse {
                 width: 40%;
-                border-radius: 5px;
-                border: none;
-
-                display: flex;
-                justify-content: space-between;
-
-                font-size: 18px;
-                font-weight: 700;
-                cursor: pointer;
             }
         }
     }
