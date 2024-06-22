@@ -22,7 +22,7 @@ export default function LogementDetails() {
     if (!logementExists) {
         return null;
     }
-
+    
     const [firstName, lastName] = logement.host.name.split(" ");
     return (
         <div className="LogementDetails">

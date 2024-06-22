@@ -100,3 +100,76 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container .details-container .text .details-logement .tags .tag {
+        padding: 5px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        margin: 0 auto 0 auto;
+        .details-container {
+            .text {
+                flex-direction: column;
+        
+                .details-logement {
+                    .title-location {
+                        h2 {
+                            font-size: 18px;
+                            font-weight: 500;
+                        }
+            
+                        p {
+                            font-size: 14px;
+                            font-weight: 700;
+                        }
+                    }
+        
+                    .tags .tag {
+                        font-size: 10px;
+                    }
+                }
+        
+                .details-host {
+                    flex-direction: row-reverse;
+                    justify-content: space-between;
+        
+                    .host-details {
+                        .host-name {
+                            font-size: 12px;
+                        }
+        
+                        #hostPicture {
+                            height: 32px;
+                        }
+                    }
+        
+                    .rate-details {
+                        .fa-star {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+    
+            .buttons {
+                flex-direction: column;
+    
+                .Collapse {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

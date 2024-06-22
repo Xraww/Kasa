@@ -36,3 +36,29 @@ header {
         }
     }
 }
+
+@media (max-width: 1024px) {
+    header {
+        width: 90%;
+    }
+}
+
+@media (max-width: 375px) {
+    header {
+        margin: 30px auto;
+
+        .navbar {
+            img {
+                height: 45px;
+            }
+    
+            .navbar-links {
+                gap: 25px;
+    
+                .links {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

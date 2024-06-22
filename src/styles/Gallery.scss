@@ -19,3 +19,25 @@
         display: none;
     }
 }
+
+@media (max-width: 1024px) {
+    .Gallery {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .Gallery {
+        padding: 0;
+        background-color: #FFFFFF;
+        height: auto;
+        overflow-y: hidden;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .Gallery {
+        margin: 20px auto 40px auto;
+    }
+}
