@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import { useLocation, useParams, useNavigate } from "react-router-dom"
-import Header from "../components/Header";
-import Slideshow from "../components/Slideshow";
-import Collapse from "../components/Collapse";
-import Footer from "../components/Footer";
-import "../styles/LogementDetails.scss";
+import Header from "../../components/Header/Header";
+import Slideshow from "../../components/Slideshow/Slideshow";
+import Collapse from "../../components/Collapse/Collapse";
+import Footer from "../../components/Footer/Footer";
+import "./LogementDetails.scss";
 
 export default function LogementDetails() {
     const logementId = useParams().logementId;

@@ -1,5 +1,7 @@
+@import "../../variables.scss";
+
 .Gallery {
-    width: 1240px;
+    width: $default-width;
     height: 770px;
     margin: 40px auto;
     padding: 35px;
@@ -29,7 +31,7 @@
 @media (max-width: 768px) {
     .Gallery {
         padding: 0;
-        background-color: #FFFFFF;
+        background-color: $secondary-color;
         height: auto;
         overflow-y: hidden;
         gap: 10px;

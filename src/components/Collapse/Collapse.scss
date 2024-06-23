@@ -1,15 +1,17 @@
+@import "../../variables.scss";
+
 .Collapse {
     button {
         width: 100%;
         display: flex;
         justify-content: space-between;
         border: none;
-        border-radius: 5px;
+        border-radius: $border-radius-low;
         padding: 10px 20px 10px 10px;
-        background-color: #FF6060;
-        color: #FFFFFF;
-        font-size: 18px;
-        font-weight: 700;
+        background-color: $primary-color;
+        color: $secondary-color;
+        font-size: $font-size-default;
+        font-weight: $weight-high;
         cursor: pointer;
 
         .fa-chevron-up {
@@ -26,6 +28,9 @@
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.5s ease;
+        font-size: $font-size-default;
+        font-weight: $weight-default;
+         
 
         &.open {
             max-height: 300px;

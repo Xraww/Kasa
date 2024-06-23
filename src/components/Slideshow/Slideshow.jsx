@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../styles/Slideshow.scss";
+import "./Slideshow.scss";
 
 export default function Slideshow(props) {
     const pictures = props.images;

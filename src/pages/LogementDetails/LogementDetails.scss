@@ -1,5 +1,7 @@
+@import "../../variables.scss";
+
 .container {
-    width: 1240px;
+    width: $default-width;
     margin: 0 auto 50px auto;
     display: flex;
     flex-direction: column;
@@ -21,13 +23,13 @@
                     gap: 5px;
     
                     h2 {
-                        color: #FF6060;
+                        color: $primary-color;
                         font-size: 30px;
                     }
     
                     p {
-                        font-size: 18px;
-                        font-weight: 500;
+                        font-size: $font-size-default;
+                        font-weight: $weight-default;
                     }
                 }
     
@@ -36,10 +38,10 @@
                     gap: 10px;
     
                     .tag {
-                        color: #FFFFFF;
-                        background-color: #FF6060;
+                        color: $secondary-color;
+                        background-color: $primary-color;
                         padding: 10px;
-                        border-radius: 10px;
+                        border-radius: $border-radius-low;
                     }
                 }
             }
@@ -61,9 +63,9 @@
                         display: flex;
                         flex-direction: column;
                         text-align: right;
-                        color: #FF6060;
-                        font-size: 18px;
-                        font-weight: 500;
+                        color: $primary-color;
+                        font-size: $font-size-default;
+                        font-weight: $weight-default;
                     }   
     
                     #hostPicture {
@@ -79,11 +81,11 @@
             
                     .fa-star {
                         color: #E3E3E3;
-                        font-size: 24px;
+                        font-size: $font-size-medium;
                     }
 
                     .active-star {
-                        color: #FF6060;
+                        color: $primary-color;
                     }
                 }
             }
@@ -126,13 +128,13 @@
                 .details-logement {
                     .title-location {
                         h2 {
-                            font-size: 18px;
-                            font-weight: 500;
+                            font-size: $font-size-default;
+                            font-weight: $weight-default;
                         }
             
                         p {
                             font-size: 14px;
-                            font-weight: 700;
+                            font-weight: $weight-high;
                         }
                     }
         
@@ -157,7 +159,7 @@
         
                     .rate-details {
                         .fa-star {
-                            font-size: 18px;
+                            font-size: $font-size-default;
                         }
                     }
                 }

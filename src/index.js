@@ -3,9 +3,9 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom"
 import Home from "./pages/Home";
-import About from "./pages/About";
-import Error from "./pages/Error";
-import LogementDetails from "./pages/LogementDetails";
+import About from "./pages/About/About";
+import Error from "./pages/Error/Error";
+import LogementDetails from "./pages/LogementDetails/LogementDetails";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

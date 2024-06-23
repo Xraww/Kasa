@@ -1,10 +1,10 @@
-import Header from "../components/Header";
-import Banner from "../components/Banner";
-import Collapse from "../components/Collapse";
-import Footer from "../components/Footer";
+import Header from "../../components/Header/Header";
+import Banner from "../../components/Banner/Banner";
+import Collapse from "../../components/Collapse/Collapse";
+import Footer from "../../components/Footer/Footer";
 
-import "../styles/About.scss";
-import img from "../assets/paysage2.jpg";
+import "./About.scss";
+import img from "../../assets/paysage2.jpg";
 
 export default function About() {
     return (

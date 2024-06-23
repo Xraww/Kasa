@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .Error {
     display: flex;
     flex-direction: column;
@@ -11,22 +13,22 @@
         gap: 50px;
     
         p {
-            color: #FF6060;
+            color: $primary-color;
         }
     
         p:nth-child(1) {
             font-size: 230px;
-            font-weight: 700;
+            font-weight: $weight-high;
         }
     
         p:nth-child(2) {
             font-size: 36px;
-            font-weight: 500;
+            font-weight: $weight-default;
         }
     
         a {
-            font-weight: 500;
-            font-size: 18px;
+            font-weight: $weight-default;
+            font-size: $font-size-default;
     
             &:visited {
                 color: inherit;
@@ -52,8 +54,7 @@
             }
     
             p:nth-child(2) {
-                font-size: 18px; 
-                // text-align: center;
+                font-size: $font-size-default; 
                 width: 80%;
             }
         }

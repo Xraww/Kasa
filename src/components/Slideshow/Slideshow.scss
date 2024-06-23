@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .Slideshow {
     position: relative;
 
@@ -5,7 +7,7 @@
         width: 100%;
         height: 415px;
         object-fit: cover;
-        border-radius: 25px;
+        border-radius: $border-radius-medium;
     }
 
     .numbering {
@@ -14,9 +16,9 @@
         left: 50%;
         transform: translateX(-50%);
 
-        color: #FFFFFF;
-        font-size: 18px;
-        font-weight: 500;
+        color: $secondary-color;
+        font-size: $font-size-default;
+        font-weight: $weight-default;
     }
 
     @mixin center-vertical {
@@ -27,7 +29,7 @@
 
     .switch {
         font-size: 47px;
-        color: #FFFFFF;
+        color: $secondary-color;
         cursor: pointer;
     }
 
@@ -46,7 +48,7 @@
     .Slideshow {
         #logementPicture {
             height: 255px;
-            border-radius: 10px;
+            border-radius: $border-radius-low;
         }
     }
 }

@@ -1,5 +1,7 @@
+@import "../../variables.scss";
+
 header {
-    width: 1240px;
+    width: $default-width;
     margin: 50px auto;
 
     .navbar {
@@ -16,8 +18,8 @@ header {
             gap: 57px;
 
             .links {
-                font-size: 24px;
-                font-weight: 500;
+                font-size: $font-size-medium;
+                font-weight: $weight-default;
                 list-style: none;
                 cursor: pointer;
 

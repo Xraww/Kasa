@@ -1,11 +1,13 @@
+@import "../../variables.scss";
+
 .About {
     .collapses-container {
         width: 80%;
         margin: 35px auto;
 
         button {
-            font-weight: 700;
-            font-size: 20px;
+            font-weight: $weight-high;
+            font-size: $font-size-default;
         }
     }
 }

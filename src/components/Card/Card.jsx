@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import "../styles/Card.scss";
+import "./Card.scss";
 
 export default function Card(props) {
     const logement = props.data;

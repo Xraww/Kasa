@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation  } from "react-router-dom"
-import "../styles/Header.scss";
-import logo from "../assets/logo.png";
+import "./Header.scss";
+import logo from "../../assets/logo.png";
 
 export default function Header() {
     const [activeSection, setActiveSection] = useState("home");

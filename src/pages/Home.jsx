@@ -1,7 +1,7 @@
-import Header from "../components/Header";
-import Banner from "../components/Banner";
-import Gallery from "../components/Gallery";
-import Footer from "../components/Footer";
+import Header from "../components/Header/Header";
+import Banner from "../components/Banner/Banner";
+import Gallery from "../components/Gallery/Gallery";
+import Footer from "../components/Footer/Footer";
 
 import img from "../assets/paysage.jpg";
 
