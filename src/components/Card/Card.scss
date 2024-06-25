@@ -1,26 +1,44 @@
 @import "../../variables.scss";
 
-.card {
-    width: 340px;
-    height: 340px;
-    border-radius: $border-radius-low;
-    position: relative;
-
+.Gallery a {
     flex: 1 1 calc(33.333% - 30px);
 
-    img {
+    .card {
         width: 100%;
-        height: 100%;
+        height: 340px;
         border-radius: $border-radius-low;
-        object-fit: cover;
+        position: relative;
+    
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: $border-radius-low;
+            object-fit: cover;
+        }
+    
+        p {
+            position: absolute;
+            bottom: 5%;
+            left: 5%;
+            color: $secondary-color;
+            font-size: $font-size-default;
+            font-weight: $weight-high;
+        }
     }
+}
 
-    p {
-        position: absolute;
-        bottom: 5%;
-        left: 5%;
-        color: $secondary-color;
-        font-size: $font-size-default;
-        font-weight: $weight-high;
+@media (max-width: 1024px) {
+    .Gallery a {
+        flex: 1 1 calc(50% - 20px);
+
+        .card {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .Gallery a {
+        flex: 1 1 calc(100% - 20px);
     }
 }

@@ -1,7 +1,7 @@
 @import "../../variables.scss";
 
 .Banner {
-    width: $default-width;
+    width: 90%;
     height: 223px;
     margin: 0 auto;
     position: relative;
@@ -33,7 +33,7 @@
         width: 733px;
         height: 68px;
         line-height: 68px;
-        font-size: 48px;
+        font-size: 45px;
         font-weight: $weight-high;
         color: $secondary-color;
     }
@@ -49,7 +49,7 @@
     .Banner {
         h1 {
             width: 100%;
-            font-size: 38px;
+            font-size: 26px;
         }
     }
 }

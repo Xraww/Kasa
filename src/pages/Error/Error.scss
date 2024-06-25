@@ -37,10 +37,18 @@
     }
 }
 
-@media (max-width: 768px) {
-    .error-container p:nth-child(2) {
-        text-align: center;
-        width: 90%;
+@media (max-width: 1024px) {
+    .Error {
+        .error-container {
+            p:nth-child(1) {
+                font-size: 150px; 
+            }
+    
+            p:nth-child(2) {
+                text-align: center;
+                width: 90%;
+            }
+        }
     }
 }
 

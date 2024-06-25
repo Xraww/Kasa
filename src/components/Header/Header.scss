@@ -1,7 +1,7 @@
 @import "../../variables.scss";
 
 header {
-    width: $default-width;
+    width: 90%;
     margin: 50px auto;
 
     .navbar {
@@ -45,7 +45,7 @@ header {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
     header {
         margin: 30px auto;
 
@@ -59,6 +59,20 @@ header {
     
                 .links {
                     font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    header {
+        .navbar {
+            .navbar-links {
+                gap: 20px;
+    
+                .links {
+                    font-size: 12px;
                 }
             }
         }

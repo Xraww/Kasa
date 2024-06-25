@@ -1,7 +1,7 @@
 @import "../../variables.scss";
 
 .container {
-    width: $default-width;
+    width: 90%;
     margin: 0 auto 50px auto;
     display: flex;
     flex-direction: column;
@@ -110,17 +110,9 @@
 }
 
 @media (max-width: 768px) {
-    .container .details-container .text .details-logement .tags .tag {
-        padding: 5px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-    }
-}
-
-@media (max-width: 375px) {
     .container {
         margin: 0 auto 0 auto;
+
         .details-container {
             .text {
                 flex-direction: column;
@@ -140,6 +132,10 @@
         
                     .tags .tag {
                         font-size: 10px;
+                        padding: 5px;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
                     }
                 }
         
