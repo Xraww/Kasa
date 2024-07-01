@@ -8,7 +8,7 @@ import "./LogementDetails.scss";
 
 export default function LogementDetails() {
     const logementId = useParams().logementId;
-    const logement = useLocation().state || {};
+    const logement = useLocation().state || {}; // Gallery → Card → LogementDetails
     const navigate = useNavigate();
 
     const logementExists = logementId === logement.id;

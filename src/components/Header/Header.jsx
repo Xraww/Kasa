@@ -13,7 +13,7 @@ export default function Header() {
         if (lastActiveSection) {
             setActiveSection(lastActiveSection);
         }
-    }, []);
+    }, [activeSection]);
   
     const handleSetActive = (section) => {
         setActiveSection(section);

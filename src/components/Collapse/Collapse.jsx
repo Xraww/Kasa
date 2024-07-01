@@ -13,6 +13,7 @@ export default function Collapse(props) {
     return (
         <div className="Collapse">
             <button onClick={toggleCollapse}>{title}<span><i className={`fa-solid fa-chevron-up ${isOpen ? "rotate" : ""}`}></i></span></button>
+            
             <div className={`collapse-content ${isOpen ? "open" : ""}`}>
                 {(typeof content !== "string") ? content.map((item, index) => (
                     <div key={index} className="item">
